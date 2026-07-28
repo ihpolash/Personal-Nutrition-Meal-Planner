@@ -1,17 +1,60 @@
-# React + Vite
+# Personal Nutrition & Meal Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A comprehensive React-based personal nutrition and fitness tracking application. Plan meals, track workouts, monitor macros, and achieve your health goals.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Feature | Description |
+|---------|-------------|
+| 📊 **Dashboard** | Daily calorie balance, macronutrient breakdown, goal forecasting, weight tracking |
+| 📋 **Meal Plan** | Generate 7-day personalized meal plans with macros, prep times, and step-by-step instructions |
+| 💪 **Workout Plan** | Weekly workout splits tailored to your goal (lose weight, maintain, gain muscle) |
+| 🛒 **Grocery List** | Auto-generated categorized shopping list from your meal plan |
+| ✅ **Daily Tracker** | Log food intake, track water consumption, and monitor daily progress |
+| 👤 **Profile** | Set fitness goals, dietary restrictions, and personalized metrics |
 
-## React Compiler
+## Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Dashboard | Meal Plan |
+|:---:|:---:|
+| ![Dashboard](screenshots/dashboard.png) | ![Meal Plan](screenshots/mealplan.png) |
 
-## Expanding the Oxlint configuration
+| Workout Plan | Grocery List |
+|:---:|:---:|
+| ![Workout](screenshots/workout.png) | ![Grocery List](screenshots/grocery.png) |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# Personal-Nutrition-Meal-Planner
+| Daily Tracker | Profile Settings |
+|:---:|:---:|
+| ![Tracker](screenshots/tracker.png) | ![Profile](screenshots/profile.png) |
+
+## Tech Stack
+
+- **React 19** with Hooks and Context API
+- **Vite 8** for fast development and build
+- **Tailwind CSS 4** for utility-first styling
+- Local-first architecture (data stored in browser localStorage)
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to use the app.
+
+## Usage
+
+1. **Register** an account (data is stored locally in your browser)
+2. **Complete your profile** — age, weight, height, activity level, and fitness goal
+3. **Generate a meal plan** and view detailed recipes with macros
+4. **Generate a workout plan** with exercises, sets, and rep ranges
+5. **Track daily progress** — log food, water, workouts, and weight
+6. **Use the grocery list** to shop for ingredients from your meal plan
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
